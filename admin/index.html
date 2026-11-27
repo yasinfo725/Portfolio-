@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101116"><title>Yasin QR Admin</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header><p class="eyebrow">YASIN DIGITAL IDENTITY</p><h1>QR Redirect Admin</h1><p class="muted">Sign in to update your permanent QR destination.</p></header>
+    <section class="panel">
+      <form id="loginForm">
+        <h2>Admin Login</h2>
+        <label>Email<input id="email" type="email" autocomplete="username" required></label>
+        <label>Password<input id="password" type="password" autocomplete="current-password" required></label>
+        <button type="submit">Sign in</button>
+      </form>
+      <form id="updateForm" hidden>
+        <h2>Destination URL</h2>
+        <p class="muted">Current destination: <span id="currentUrl">Loading…</span></p>
+        <label>New HTTPS URL<input id="destination" type="url" placeholder="https://example.com/" required></label>
+        <button type="submit">Save destination</button>
+        <button type="button" class="secondary" id="logout">Log out</button>
+      </form>
+      <p id="status" role="status" aria-live="polite"></p>
+    </section>
+    <footer>Permanent QR address: <code>https://yasinfo725.github.io/go/</code></footer>
+  </main>
+  <script src="js/config.js"></script><script src="js/app.js"></script>
+</body></html>
