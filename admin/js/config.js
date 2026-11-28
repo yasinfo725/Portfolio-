@@ -1,0 +1,1 @@
+window.YASIN_CONFIG={workerBaseUrl:"https://yasin-qr-admin.yasinfo725.workers.dev",permanentQrUrl:"https://yasinfo725.github.io/go/"};
